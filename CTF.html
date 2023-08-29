@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <style>
+      .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    h1 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  </style>
+  <script>
+    function checkAnswer() {
+      var answer = document.getElementById("answer").value.toLowerCase();
+      var message = document.getElementById("message");
+      
+      if (answer === "ITechTU{zer0_0ne_0ne}") {
+        message.textContent = "Congratulations! Your answer is correct.";
+      } else {
+        message.textContent = "Sorry, your answer is incorrect. Please try again.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>SVRlY2hUVXt6ZXIwXzBuZV8wbmV9</h1>
+    <input type="text" id="answer" placeholder="">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="message"></p>
+  </div>
+</body>
+</html>
