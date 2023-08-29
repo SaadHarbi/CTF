@@ -20,10 +20,10 @@
   </style>
   <script>
     function checkAnswer() {
-      var answer = document.getElementById("answer");
+      var answer = document.getElementById("answer").value;
       var message = document.getElementById("message");
       
-      if (answer =="ITechTU{zer0_0ne_0ne}") {
+      if (answer ==="ITechTU{zer0_0ne_0ne}") {
         message.textContent = "Congratulations! Your answer is correct.";
       } else {
         message.textContent = "Sorry, your answer is incorrect. Please try again.";
